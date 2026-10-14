@@ -1,0 +1,7 @@
+{
+  "name": "STABIMATIC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

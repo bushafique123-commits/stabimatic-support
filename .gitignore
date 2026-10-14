@@ -1,0 +1,16 @@
+.env
+api/.env
+admin/.env
+
+api/logs/*.log
+api/uploads/installations/*
+!api/uploads/installations/.gitkeep
+
+mobile-app/node_modules/
+mobile-app/www/
+mobile-app/android/
+mobile-app/ios/
+mobile-app/.angular/
+
+admin/vendor/
+api/vendor/

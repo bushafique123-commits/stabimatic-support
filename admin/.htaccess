@@ -1,0 +1,13 @@
+RewriteEngine On
+
+DirectoryIndex public/index.php
+
+RewriteCond %{THE_REQUEST} \s/+admin/public/?(?:index\.php)?[?\s] [NC]
+RewriteRule ^public/?(?:index\.php)?$ /admin [R=301,L]
+RewriteRule ^$ public/index.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ public/index.php [QSA,L]
+
+Options -Indexes
